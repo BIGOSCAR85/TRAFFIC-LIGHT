@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 
-const Semaforo = () => {
+const TrafficLight = () => {
 
 	const [color, setColor] = useState("")
 
@@ -10,7 +10,7 @@ const Semaforo = () => {
 
 		<div className="top"></div>
 
-		<div className="semaforo">
+		<div className="TrafficLight">
 			
 			<div
 				className={color === "red" ? "red on" : "red"}
@@ -26,7 +26,7 @@ const Semaforo = () => {
 			</div>
 		</div> 
 		<div className="text-center">
-                <div className="CambiaColor">
+                <div className="ColorChange">
                     <button
                         type="button"
                         className="btn btn-primary text-center m-3"
@@ -41,7 +41,7 @@ const Semaforo = () => {
                                 ? setColor("red")
                                 : hidden === "yes"
                         }>
-                        <b>Cambia color</b>                        
+                        <b>Color Change</b>                        
                     </button>
                 </div>
 			</div>  
@@ -49,4 +49,4 @@ const Semaforo = () => {
 	);
 };
 
-export default Semaforo;
+export default TrafficLight;

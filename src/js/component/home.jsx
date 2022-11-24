@@ -8,7 +8,7 @@ import Semaforo from "./Semaforo";
 const Home = () => {	
 		return (
 			<div>
-				<Semaforo />
+				<TrafficLight />
 			</div>
 		);
 	};
